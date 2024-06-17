@@ -1,28 +1,22 @@
 
 
+def cycle_num(list):
+    total = []
+    for i in list:
+        total.append(i + (i+1))
+        print(total)
 
-def finde_pairs_for_numbers(target_number):
-    pairs = []
-    for i in range(1, target_number + 1):
-        for j in range(i, target_number + 1):
-            if ((i+j) % target_number == 0) and (i != j):
-                pairs. append(f'{i}{j}')
-    return pairs
+list = range(1, 11)
+print(''.join(str(x) for x in list))
 
-for number in range(3, 21):
-    numbers = finde_pairs_for_numbers(number)
-    result = ''.join(map(str, numbers))
-    print(f'{number}-{result}')
 
--------------------------------------------------
-def finde_pair_for_numbers(target_number):
-    pairs = []
-    for i in range(1, target_number + 1):
-        for j in range(i, target_number + 1):
-            if ((i+j) % target_number ==0) and (i != j):
-                print(f'{i}{j}')
-    return pairs
-for number in range(3,21):
-    numbers = finde_pair_for_numbers(number)
-    result = ''.join(map(str, numbers))
-    print(f'{number}-{result}')
+
+
+
+
+
+print(*range(1,11))
+
+
+
+print(''.join(str(x) for x in range(1, 11)))
