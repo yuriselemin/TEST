@@ -10,13 +10,7 @@ list = range(1, 11)
 print(''.join(str(x) for x in list))
 
 
-
-
-
-
-
 print(*range(1,11))
-
 
 
 print(''.join(str(x) for x in range(1, 11)))
@@ -47,7 +41,19 @@ max.say_info()
 den.birthday()
 
 
+list1 = []
+list2 = []
 
+for num in range(10):
+    if num % 2 == 0:
+        list1.append(num)
+    else:
+        list2.append(num)
+
+list11 = '*'.join(map(str,list1))
+list22 = '*'.join(map(str,list2))
+print(*list22)
+print(*list11)
 
 
 
